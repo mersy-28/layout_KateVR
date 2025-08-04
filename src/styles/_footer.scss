@@ -1,9 +1,9 @@
+@use 'sass:color';
 @import 'mixins';
 @import 'vars';
 
 .footer {
-  // swapped darken → color.adjust
-  background: color.adjust($color-light, $lightness: -5%);
+  background: color.darken($color-light, 5%);
   padding: 2rem 0;
 
   &__inner {
@@ -32,9 +32,7 @@
 
   &__copy {
     font-size: 0.88rem;
-
-    // swapped darken → color.adjust
-    color: color.adjust($color-dark, $lightness: -40%);
+    color: color.darken($color-dark, 40%);
     margin-top: 1rem;
 
     @include respond-to(mobile) {

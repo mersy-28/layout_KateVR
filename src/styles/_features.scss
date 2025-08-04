@@ -1,3 +1,4 @@
+@use 'sass:color';
 @import 'mixins';
 @import 'vars';
 
@@ -41,9 +42,7 @@
 
   &__item-text {
     font-size: 1rem;
-
-    // swapped darken → color.adjust
-    color: color.adjust($color-dark, $lightness: -30%);
+    color: color.darken($color-dark, 30%);
   }
 
   @include respond-to(desktop) {
