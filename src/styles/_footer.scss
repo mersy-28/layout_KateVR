@@ -2,6 +2,7 @@
 @import 'vars';
 
 .footer {
+  // swapped darken → color.adjust
   background: color.adjust($color-light, $lightness: -5%);
   padding: 2rem 0;
 
@@ -31,6 +32,8 @@
 
   &__copy {
     font-size: 0.88rem;
+
+    // swapped darken → color.adjust
     color: color.adjust($color-dark, $lightness: -40%);
     margin-top: 1rem;
 

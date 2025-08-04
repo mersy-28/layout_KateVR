@@ -41,6 +41,8 @@
 
   &__item-text {
     font-size: 1rem;
+
+    // swapped darken → color.adjust
     color: color.adjust($color-dark, $lightness: -30%);
   }
 

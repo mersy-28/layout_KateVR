@@ -27,6 +27,8 @@
   &__subtitle {
     font-size: 1.13rem;
     margin: 1rem 0 2rem;
+
+    // swapped darken → color.adjust
     color: color.adjust($color-dark, $lightness: -20%);
   }
 
